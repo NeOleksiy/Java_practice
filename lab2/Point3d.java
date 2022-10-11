@@ -26,10 +26,10 @@ public class Point3d extends Point2d{
         zCoord = value;
     }
     public static boolean compare(Point3d coord1, Point3d coord2){//Метод сравнения двух точек
-        if (coord1 == coord2)
-            return false;
-        else
+        if (coord1.equals(coord2))
             return true;
+        else
+            return false;
     }
     //Метод для рассчёта расстояние между точками
     public double distanceTo(Point3d coord1, Point3d coord2){
